@@ -25,6 +25,11 @@ class Main extends CI_Controller {
 		// $this->smarty->display("welcome_message");
 	}
 
+	public function test(){
+				$this->smarty->assign("add",array('a'=>'b','a1'=>'b1','a2'=>'b2'));
+		$this->smarty->display("a.html");
+	}
+
 	public function header()
 	{
 		$this->smarty->display("tpl/header.html");
@@ -128,5 +133,10 @@ class Main extends CI_Controller {
 	public function client_list()
 	{
 		$this->smarty->display("client/client_list.html");
+	}
+
+	public function client_new()
+	{
+		$this->smarty->display("client/client_new.html");
 	}
 }

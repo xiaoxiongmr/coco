@@ -444,7 +444,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
         // Form Tools
         .state('client_new', {
             url: "/client_new",
-            templateUrl: "index.php?c=main&m=form_tools",
+            templateUrl: "index.php?c=main&m=client_new",
             data: {pageTitle: 'Form Tools'},
             controller: "GeneralPageController",
             resolve: {
